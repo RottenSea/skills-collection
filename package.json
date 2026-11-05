@@ -1,0 +1,15 @@
+{
+  "name": "skills-collection",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A collection of reusable skills for AI agents.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "install-skills": "node scripts/install-skills.mjs",
+    "test": "node --test \"test/**/*.test.mjs\""
+  }
+}
