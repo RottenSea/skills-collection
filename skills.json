@@ -1,0 +1,55 @@
+{
+  "groups": {
+    "common": "Skills used in most projects. Installed by default.",
+    "occasional": "Skills used now and then. Installed with --group occasional or --all."
+  },
+  "skills": {
+    "humanizer": {
+      "group": "common",
+      "source": "vendor/blader-humanizer",
+      "path": ".",
+      "exclude": [".claude-plugin", ".cursor-plugin", ".github", "AGENTS.md", "CHANGELOG.md", "README.md", "scripts"]
+    },
+    "docx": {
+      "group": "common",
+      "source": "vendor/anthropics-skills",
+      "path": "skills/docx"
+    },
+    "pdf": {
+      "group": "common",
+      "source": "vendor/anthropics-skills",
+      "path": "skills/pdf"
+    },
+    "pptx": {
+      "group": "common",
+      "source": "vendor/anthropics-skills",
+      "path": "skills/pptx"
+    },
+    "xlsx": {
+      "group": "common",
+      "source": "vendor/anthropics-skills",
+      "path": "skills/xlsx"
+    },
+    "eli5": {
+      "group": "common",
+      "source": "vendor/dreambigou-eli5",
+      "path": "skills/eli5"
+    },
+    "stop-that-shit": {
+      "group": "common",
+      "source": "vendor/lennney-stop-that-shit",
+      "path": "skills/stop-that-shit"
+    },
+    "grilling": {
+      "group": "common",
+      "source": "vendor/mattpocock-skills",
+      "path": "skills/productivity/grilling"
+    },
+    "grill-me": {
+      "group": "common",
+      "source": "vendor/mattpocock-skills",
+      "path": "skills/productivity/grill-me",
+      "requires": ["grilling"]
+    }
+  }
+}

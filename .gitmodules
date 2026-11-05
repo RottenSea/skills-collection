@@ -1,0 +1,25 @@
+[submodule "vendor/blader-humanizer"]
+	path = vendor/blader-humanizer
+	url = https://github.com/blader/humanizer.git
+	branch = main
+	shallow = true
+[submodule "vendor/anthropics-skills"]
+	path = vendor/anthropics-skills
+	url = https://github.com/anthropics/skills.git
+	branch = main
+	shallow = true
+[submodule "vendor/lennney-stop-that-shit"]
+	path = vendor/lennney-stop-that-shit
+	url = https://github.com/lennney/stop-that-shit.git
+	branch = main
+	shallow = true
+[submodule "vendor/mattpocock-skills"]
+	path = vendor/mattpocock-skills
+	url = https://github.com/mattpocock/skills.git
+	branch = main
+	shallow = true
+[submodule "vendor/dreambigou-eli5"]
+	path = vendor/dreambigou-eli5
+	url = https://github.com/DreambigOu/ELI5.git
+	branch = main
+	shallow = true
