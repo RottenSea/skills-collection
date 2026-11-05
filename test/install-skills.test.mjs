@@ -106,8 +106,9 @@ describe("install", () => {
     assert.ok(existsSync(join(target, ".agents/skills/existing/SKILL.md")));
   });
 
-  test("refuses to install into the collection itself", () => {
-    assert.throws(() => install({ root, manifest, target: root, names: ["root"] }), /keeps no \.agents/);
+  test("installs into the collection itself", () => {
+    install({ root, manifest, target: root, names: ["nested"] });
+    assert.ok(existsSync(join(root, ".agents/skills/nested/SKILL.md")));
   });
 });
 

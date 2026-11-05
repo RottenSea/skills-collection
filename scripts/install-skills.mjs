@@ -85,13 +85,6 @@ function ensureSubmodule(root, source) {
 /** Copies the named skills into <target>/.agents/skills/ and ignores that directory in git. */
 export function install({ root = ROOT, manifest = loadManifest(root), target, names }) {
   const targetDir = resolve(target);
-  if (targetDir === resolve(root)) {
-    throw new Error(
-      `The target is skills-collection itself, which keeps no .agents/ directory.\n` +
-        `Run the script from the project you want the skills in, or pass that project's path:\n` +
-        `  node ${relative(process.cwd(), join(root, "scripts", "install-skills.mjs")) || "scripts/install-skills.mjs"} <project>`,
-    );
-  }
   if (!existsSync(targetDir)) throw new Error(`Target ${targetDir} does not exist.`);
 
   // Check every source before touching the target, so a failure leaves it as it was.

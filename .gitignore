@@ -1,2 +1,2 @@
-# This repository keeps no .agents/ directory; install skills into other projects.
+# Skills installed here with scripts/install-skills.mjs are local copies.
 /.agents/
